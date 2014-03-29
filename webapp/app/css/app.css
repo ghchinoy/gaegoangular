@@ -1,0 +1,55 @@
+/* app css stylesheet */
+
+body {
+  font-family: "Open Sans", Helvetica;
+}
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.box {
+  height: 300px;
+  width: 300px;
+  background-color: coral;
+}
+
+.box .word {
+  font-size: 26pt;
+  font-style: bold;
+  margin: 5px;
+
+}
+
+.box .meaning {
+  font-size: 26pt;
+  font-style: italic;
+  margin: 5px;
+
+}
+

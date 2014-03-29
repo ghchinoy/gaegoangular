@@ -1,0 +1,30 @@
+application: simple-node-001
+version: 1
+runtime: go
+api_version: go1
+
+handlers:
+  - url: /
+    static_files: webapp/app/index.html
+    upload: webapp/app/(.*\.html)
+
+  - url: /css
+    static_dir: webapp/app/css
+
+  - url: /js
+    static_dir: webapp/app/js
+
+  - url: /img
+    static_dir: webapp/app/img
+
+  - url: /lib
+    static_dir: webapp/app/lib
+
+  - url: /partials
+    static_dir: webapp/app/partials
+
+  - url: /bower_components
+    static_dir: webapp/bower_components
+
+  - url: /.*
+    script: go app
