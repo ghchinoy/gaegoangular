@@ -1,4 +1,4 @@
-application: simple-node-001
+application: gaegoangular
 version: 1
 runtime: go
 api_version: go1
